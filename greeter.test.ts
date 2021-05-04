@@ -46,7 +46,7 @@ describe("loud greeter", function() {
         let greeter:LoudGreeter = new LoudGreeter("Hey you");
         greeter.addVolume();
         let greeting:string = greeter.greet("Nate");
-        expect(greeting).toBe("Hey you, Nate!!!!");
+        expect(greeting).toBe("HEY YOU, NATE!!!!");
     });
 
     test("with add volume 5 times", () => {
@@ -57,13 +57,13 @@ describe("loud greeter", function() {
         greeter.addVolume();
         greeter.addVolume();
         let greeting:string = greeter.greet("Clay");
-        expect(greeting).toBe("Hi, Clay!!!!!!!!");
+        expect(greeting).toBe("HI, CLAY!!!!!!!!");
     });
 
     test("without add volume", () => {
         let greeter:LoudGreeter = new LoudGreeter("Nice to see you");
         let greeting:string = greeter.greet("Julie");
-        expect(greeting).toBe("Nice to see you, Julie!!!");
+        expect(greeting).toBe("NICE TO SEE YOU, JULIE!!!");
     });       
 });
 
