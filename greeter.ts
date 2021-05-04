@@ -6,9 +6,5 @@ export class Greeter {
     greet(name:string):string {
         return `${this.greeting}, ${name}!`;
     }
-    
-
-
-
-
+ 
 }

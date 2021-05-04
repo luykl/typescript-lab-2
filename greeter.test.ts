@@ -5,19 +5,19 @@ import { HTMLGreeter } from "./html-greeter";
 
 describe("Greeter", function() {
 
-    test("test greeting", () => {
+    test("greeting", () => {
         let greet:Greeter = new Greeter("Good Morning");
         let greeting:string = greet.greet("Jo");
         expect(greeting).toBe("Good Morning, Jo!");
     });
 
-    test("test greeting again", () => {
+    test("another greeting", () => {
         let greeter:Greeter = new Greeter("Good Evening");
         let greeting:string = greeter.greet("Abby");
         expect(greeting).toBe("Good Evening, Abby!");
     });
 
-    test("test greeting yet again", () => {
+    test("yet another greeting", () => {
         let greeter:Greeter = new Greeter("Hello");
         let greeting:string = greeter.greet("Brian");
         expect(greeting).toBe("Hello, Brian!");
@@ -32,10 +32,10 @@ describe("JavaScript greeter", function() {
         expect(greeting).toBe("console.log('Hey, Chris!')");
     });
 
-    test("console.log greeting", () => {
-        let greeter:JavaScriptGreeter = new JavaScriptGreeter("Hello");
+    test("another console.log greeting", () => {
+        let greeter:JavaScriptGreeter = new JavaScriptGreeter("Hi there");
         let greeting:string = greeter.greet("Dave")
-        expect(greeting).toBe("console.log('Hello, Dave!')");
+        expect(greeting).toBe("console.log('Hi there, Dave!')");
     });   
 });
 
@@ -61,9 +61,9 @@ describe("loud greeter", function() {
     });
 
     test("without add volume", () => {
-        let greeter:LoudGreeter = new LoudGreeter("Hi");
+        let greeter:LoudGreeter = new LoudGreeter("Nice to see you");
         let greeting:string = greeter.greet("Julie");
-        expect(greeting).toBe("Hi, Julie!!!");
+        expect(greeting).toBe("Nice to see you, Julie!!!");
     });       
 });
 
